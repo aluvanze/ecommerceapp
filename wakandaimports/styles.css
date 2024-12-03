@@ -1,0 +1,163 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 2em;
+}
+/*Logo*/
+/* Logo Styling */
+header .logo img {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+/* Logo Styling */
+header .logo img {
+    width: 100px; /* Smaller size */
+    height: 100px; /* Ensure height matches width for a circular shape */
+    border-radius: 50%; /* Keeps the image rounded */
+    object-fit: cover; /* Ensures the image covers the circular area */
+    display: block;
+    margin: 0;
+}
+
+
+/*End*/
+
+header .filters {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+header form {
+    display: flex;
+    align-items: center;
+}
+
+header select {
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+header .cart a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+header .cart a:hover {
+    background-color: #45a049;
+}
+
+/* Product List */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product p {
+    color: #4CAF50;
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+.product form input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    font-size: 1em;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .filters {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    header form {
+        width: 100%;
+    }
+
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 80%;
+    }
+}
